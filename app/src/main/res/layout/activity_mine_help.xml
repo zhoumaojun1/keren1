@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rlUserInfo"
+            style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_help_install" />
+
+            <TextView
+                style="@style/helpService"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+
+                android:text="@string/mine_card_install" />
+
+            <ImageView
+                android:id="@+id/rcUserAvatar"
+                style="@style/itemRightImage1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:src="@mipmap/mine_back_icon" />
+
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+
+        <RelativeLayout style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_help_register" />
+
+
+            <TextView
+                android:id="@+id/tvUserAccountName"
+                style="@style/helpService"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+                android:text="@string/mine_card_register" />
+
+            <ImageView
+                style="@style/itemRightImage1"
+                android:src="@mipmap/mine_back_icon" />
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+
+        <RelativeLayout
+            android:id="@+id/rlAboutUs"
+            style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_help_bind" />
+
+
+            <TextView
+                android:id="@+id/tvUserContact"
+                style="@style/helpService"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+                android:text="@string/mine_card_bind" />
+
+            <ImageView
+                style="@style/itemRightImage1"
+                android:src="@mipmap/mine_back_icon" />
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+
+        <RelativeLayout
+            android:id="@+id/rlContactService"
+            style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_help_location" />
+
+
+            <TextView
+                android:id="@+id/etUserPhoneNumber"
+                style="@style/helpService"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+                android:text="@string/mine_card_location" />
+
+            <ImageView
+                style="@style/itemRightImage1"
+                android:src="@mipmap/mine_back_icon" />
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+
+
+
+
+        <RelativeLayout
+
+            style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_device_manager" />
+
+
+            <TextView
+                android:id="@+id/etUserAddress"
+                style="@style/helpService"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+                android:text="@string/mine_card_device_other" />
+
+            <ImageView
+                style="@style/itemRightImage1"
+                android:src="@mipmap/mine_back_icon" />
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+        <RelativeLayout
+            android:id="@+id/rl_help_other"
+            style="@style/settingsUserInfoItem">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mine_other" />
+
+
+            <TextView
+                android:id="@+id/etUserEmail"
+                style="@style/helpService"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/size_16sp"
+                android:text="@string/mine_card_other" />
+
+            <ImageView
+                style="@style/itemRightImage1"
+                android:src="@mipmap/mine_back_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

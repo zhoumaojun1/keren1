@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eil_account"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_btn_ver_code"
+        android:layout_marginStart="@dimen/margin_left_24dp"
+        android:layout_marginEnd="@dimen/margin_right_24dp"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/TextAppearanceAppCompatSmallError"
+        app:hintTextAppearance="@style/TextAppearanceAppCompatSmallHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_logo"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_old_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:hint="@string/modify_password_input_old_password"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/color_86898"
+            android:background="@null"
+            android:inputType="number"
+            android:nextFocusForward="@id/et_password"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/margin_left_24dp"
+        android:layout_marginEnd="@dimen/margin_right_24dp"
+        android:background="@drawable/shape_btn_ver_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eil_account">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/TextAppearanceAppCompatSmallError"
+            app:hintTextAppearance="@style/TextAppearanceAppCompatSmallHint"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/teal_700">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/color_86898"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="@string/modify_password_input_new_password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/margin_left_24dp"
+            android:layout_marginEnd="@dimen/margin_right_24dp"
+            android:background="@drawable/shape_btn_ver_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eil_account">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/TextAppearanceAppCompatSmallError"
+                app:hintTextAppearance="@style/TextAppearanceAppCompatSmallHint"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/teal_700">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_again_new_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/color_86898"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:hint="@string/modify_password_input_once_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+    <Button
+        android:id="@+id/btn_forget_pass_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/margin_left_24dp"
+        android:layout_marginEnd="@dimen/margin_right_24dp"
+        android:background="@drawable/shape_btn_confirm_pressed"
+        android:text="@string/bind_phone_code_sure"
+        android:textColor="@color/white_full"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/til_password"
+        app:layout_constraintStart_toStartOf="@id/til_password"
+        app:layout_constraintTop_toBottomOf="@id/rl_password" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

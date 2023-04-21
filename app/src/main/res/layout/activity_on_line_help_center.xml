@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_9B9B9B"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlDeviceDetails"
+                style="@style/settingsUserInfoItem">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_install" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_install" />
+
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlCom"
+                style="@style/settingsUserInfoItem"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_down" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_down" />
+
+                <ImageView
+
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlS"
+                style="@style/settingsUserInfoItem"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_register" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_register" />
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFenceAlarm"
+                style="@style/settingsUserInfoItem">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_bind" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_bind" />
+
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAlarmInformation"
+                style="@style/settingsUserInfoItem"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_location" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_location" />
+
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+            <RelativeLayout
+                style="@style/settingsUserInfoItem"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_location" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_device_other" />
+
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                style="@style/settingsUserInfoItem"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/mine_help_location" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_card_other" />
+
+                <ImageView
+                    style="@style/itemRightImage"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

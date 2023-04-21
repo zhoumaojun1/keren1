@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_login_bg"
+    tools:context=".user.home.main.SelectRoleActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_logo_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="160dp"
+
+        android:src="@mipmap/app_splash_login_logo" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_select_role"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_right_24dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/tv_user_card"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="@dimen/status_bar_height"
+        android:layout_marginEnd="@dimen/status_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/corners_bg_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select"
+        >
+        <ImageView
+            android:id="@+id/iv_user_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/tv_user_use_card"
+            android:src="@mipmap/start_right_icon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_use_card"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/main_user_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14sp" />
+        <ImageView
+            android:id="@+id/iv_user_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tv_user_use_card"
+            android:src="@mipmap/start_left_icon" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tv_distributor_card"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/corners_bg_blue"
+        android:layout_marginStart="@dimen/status_bar_height"
+        android:layout_marginEnd="@dimen/status_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_card"
+      >
+        <ImageView
+            android:id="@+id/iv_dis_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/tv_distributor_use_card"
+            android:src="@mipmap/start_right_icon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_distributor_use_card"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/main_distributor_card"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/size_14sp" />
+        <ImageView
+            android:id="@+id/iv_dis_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/tv_distributor_use_card"
+            android:src="@mipmap/start_left_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_admin_card"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="@dimen/status_bar_height"
+        android:background="@drawable/corners_bg_blue"
+        android:layout_marginEnd="@dimen/status_bar_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distributor_card"
+    >
+        <ImageView
+            android:id="@+id/iv_admin_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/tv_admin_use_card"
+            android:src="@mipmap/start_right_icon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_admin_use_card"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/main_administrators_card"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/size_14sp" />
+        <ImageView
+            android:id="@+id/iv_admin_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/tv_admin_use_card"
+            android:src="@mipmap/start_left_icon" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_next_login_home"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_admin_card"
+
+        android:layout_marginStart="@dimen/ic_landscape_size"
+        android:layout_marginEnd="@dimen/ic_landscape_size"
+        android:background="@drawable/shape_btn_confirm_pressed"
+        android:text="@string/login_sure"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="@color/white_full"
+        android:textSize="16sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

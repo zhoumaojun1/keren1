@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pet_list_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlDeviceDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_16dp">
+
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="24dp"
+                    android:text="@string/mine_app_default_new_version" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_below="@+id/tv_01"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_app_default_new_version_point"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_use_com"
+                    style="@style/itemRightImage"
+                    android:text="@string/mine_voice_use_com"
+                    android:textColor="@color/color_1FC8A9"
+                    android:textSize="@dimen/size_12sp" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/tv_use_com"
+                    android:src="@mipmap/mine_voice_use_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlCom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_16dp">
+
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="24dp"
+                    android:text="@string/mine_speech_sounds_02" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_below="@+id/tv_02"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_speech_sounds_02_point"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+
+                <TextView
+                    style="@style/itemRightImage"
+                    android:background="@drawable/corner_5_blue"
+                    android:gravity="center"
+                    android:padding="5dp"
+
+                    android:text="@string/mine_voice_use_com"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_16dp">
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="24dp"
+                    android:text="@string/mine_cute_chicken_team" />
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_below="@+id/tv_03"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_app_default_new_version"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+                <TextView
+                    style="@style/itemRightImage"
+                    android:background="@drawable/shape_voice_service"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_5dp"
+
+                    android:text="@string/mine_voice_down"
+                    android:textColor="@color/color_1FC8A9"
+                    android:textSize="@dimen/size_12sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

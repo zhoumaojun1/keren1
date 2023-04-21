@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cs_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:src="@mipmap/use_card_share_ble"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="45dp"
+            android:text="蓝牙版"
+            app:layout_constraintStart_toEndOf="@+id/iv_ble"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_ble_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/use_card_share_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_card_ble_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/mine_small_robot"
+            android:text="XC3-HiLink"
+            android:textColor="@color/color_00000"
+            android:textSize="@dimen/size_24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_ble" />
+
+        <TextView
+            android:id="@+id/tv_card_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:layout_marginTop="8dp"
+            android:text="颜色"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_ble_name" />
+
+        <TextView
+            android:id="@+id/tv_card_color_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:text="翡翠红"
+            android:textColor="@color/color_00000"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_card_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_ble_name" />
+
+
+        <TextView
+            android:id="@+id/tv_card_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:layout_marginTop="8dp"
+            android:text="SN"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_color" />
+
+        <TextView
+            android:id="@+id/tv_card_sn_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:text="MU3L374W742321N6"
+            android:textColor="@color/color_00000"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_card_sn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_color" />
+
+
+        <TextView
+            android:id="@+id/tv_card_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:layout_marginTop="8dp"
+            android:text="车架号"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_sn" />
+
+        <TextView
+            android:id="@+id/tv_card_frame_code_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:text="199222177037447"
+            android:textColor="@color/color_00000"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_card_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_sn" />
+
+        <TextView
+            android:id="@+id/tv_card_dian_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:layout_marginTop="8dp"
+            android:text="电机号"
+            android:textSize="@dimen/size_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_code" />
+
+        <TextView
+            android:id="@+id/tv_dian_ji_code_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:text="JYB3NBG21A060832"
+            android:textColor="@color/color_00000"
+            android:textSize="@dimen/size_12sp"
+            android:paddingBottom="42dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_card_dian_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_code" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_share_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cs_card_info">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sear_phone_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/use_card_share_from_phone" />
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:text="@string/mine_share_card_from_phone_number"
+                android:textColor="@color/color_333333"
+
+                android:textSize="@dimen/size_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_exit"
+                android:layout_marginLeft="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="8dp"
+                android:text="@string/mine_share_card_from_phone_number_point"
+                android:textColor="@color/color_86898"
+                android:textSize="@dimen/size_12sp" />
+
+
+            <ImageView
+                style="@style/itemRightImage"
+                android:src="@mipmap/mine_back_icon" />
+
+        </RelativeLayout>
+
+        <View style="@style/setViewLeft" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sear_phone_list_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right_24dp"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16"
+            android:layout_marginTop="8dp"
+           >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/use_card_share_from_phone_list" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:text="@string/mine_share_card_from_communication_list"
+                android:textColor="@color/color_333333"
+
+
+                android:textSize="@dimen/size_16sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_phone"
+                android:layout_marginLeft="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="8dp"
+
+                android:text="@string/mine_share_card_from_communication_list_point"
+                android:textColor="@color/color_86898"
+                android:textSize="@dimen/size_12sp" />
+
+
+            <ImageView
+                style="@style/itemRightImage"
+                android:src="@mipmap/mine_back_icon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_card_share_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/margin_top_21dp"
+        android:text="分享用户（0）"
+        android:textColor="@color/color_86898"
+        android:textSize="@dimen/size_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/ll_share_card" />
+
+
+    <ImageView
+        android:id="@+id/iv_use_share_card_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/use_card_share_fail_bg"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_share_number" />
+    <TextView
+       android:id="@+id/tv_share_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/margin_top_21dp"
+        android:text="车辆未分享给其他人"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_use_share_card_fail" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_share_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card_share_number">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

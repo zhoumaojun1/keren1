@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_mine_head_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/mine_about_my_bg_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mine_head_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pet_list_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_app_user_register"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_about_my_user_register_xie_yi" />
+
+                <ImageView
+                    style="@style/itemRightImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+            <View style="@style/setViewLine" />
+            <RelativeLayout
+                android:id="@+id/rl_app_privacy_policy"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_about_my_user_privacy_policy" />
+
+
+                <ImageView
+
+                    style="@style/itemRightImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+            <View style="@style/setViewLine" />
+            <RelativeLayout
+                android:id="@+id/rl_app_legal_info"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_about_my_legal_information" />
+
+                <ImageView
+                    style="@style/itemRightImage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+            <View style="@style/setViewLine" />
+            <RelativeLayout
+                android:id="@+id/rl_app_service_phone"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_about_service_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/tv_app_phone"
+                    android:src="@mipmap/about_mine"
+                    android:text="400-888-8888" />
+
+                <TextView
+                    android:id="@+id/tv_app_phone"
+                    style="@style/itemRightImage"
+                    android:background="@drawable/corner_5_blue"
+                    android:padding="@dimen/margin_5dp"
+                    android:src="@mipmap/mine_back_icon"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            <View style="@style/setViewLine" />
+            <RelativeLayout
+                android:id="@+id/rl_app_version"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_about_service_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/tv_app_update"
+                    android:src="@mipmap/about_mine"
+                    android:text="v1.0.0" />
+
+                <TextView
+                    android:id="@+id/tv_app_update"
+                    style="@style/itemRightImage"
+                    android:background="@drawable/corner_5_blue"
+                    android:padding="@dimen/margin_5dp"
+                    android:src="@mipmap/mine_back_icon"
+                    android:text="升级"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            <View style="@style/setViewLine" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

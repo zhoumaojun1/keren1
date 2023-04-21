@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_F5F5F5">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rlFenceAlarm"
+        android:background="@color/white"
+        style="@style/settings">
+        <EditText
+            android:id="@+id/etCardName"
+            style="@style/setMineItemTitle"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="设备1" />
+
+        <ImageView
+            style="@style/itemRightImage"
+            android:src="@mipmap/mine_delete_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

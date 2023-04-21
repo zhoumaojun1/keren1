@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+
+        android:layout_marginLeft="@dimen/margin_right_24dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/mine_user_info"
+        android:textColor="@color/color_86898"
+        android:textSize="@dimen/size_14sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dimen_24">
+
+
+                    <TextView
+                        android:id="@+id/iv_head_img"
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+                        android:text="@string/mine_user_head" />
+
+                    <com.wja.keren.user.home.view.AvatarView
+                        android:id="@+id/iv_change_user_head"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23dp"
+                        android:src="@mipmap/mine_user_head" />
+
+                    <ImageView
+                        style="@style/itemRightImage1"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+                    android:id="@+id/rlControlCom"
+                    style="@style/settings">
+
+
+                    <TextView
+
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+                        android:text="@string/mine_user_nick" />
+
+                    <TextView
+                        android:id="@+id/iv_change_user_nick"
+                        style="@style/itemRightImage"
+                        android:layout_marginRight="30dp" />
+
+                    <ImageView
+                        style="@style/itemRightImage1"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+                    android:id="@+id/rlControlS"
+                    style="@style/settings">
+
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+                        android:text="@string/mine_user_change_phone" />
+
+                    <TextView
+                        android:id="@+id/iv_change_user_phone"
+                        style="@style/itemRightImage"
+                        android:layout_marginRight="30dp" />
+
+                    <ImageView
+                        style="@style/itemRightImage1"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+                    android:id="@+id/rlFenceAlarm"
+                    style="@style/settings">
+
+
+                    <TextView
+
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_user_change_login_password" />
+
+                    <TextView
+                        android:id="@+id/iv_change_login_password"
+                        style="@style/itemRightImage"
+
+                        android:layout_marginRight="30dp" />
+
+                    <ImageView
+                        style="@style/itemRightImage1"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_user_face_login" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_user_face_login"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_user_loop_finger_login" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_loop_finger_login"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_card_error_shake" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_card_error_shake"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_card_source_break" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_source_break"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_card_source_break_monitor" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_source_break_monitor"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_card_source_guard_alarm" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_source_guard_alarm"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/setViewLeft" />
+
+                <RelativeLayout
+
+                    style="@style/settings">
+
+                    <TextView
+                        style="@style/setMineItemTitle"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/mine_card_source_hitch_alarm" />
+
+                    <com.wja.keren.user.home.view.SwitchButton
+                        android:id="@+id/switch_source_hitch_alarm"
+                        style="@style/itemSwitch1"
+                        android:layout_marginRight="5dp" />
+
+
+                </RelativeLayout>
+                <View style="@style/setViewLeft" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="60dp"
+                    android:layout_height="300dp">
+
+                    <Button
+                        android:id="@+id/btn_out_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/title_height"
+
+                        android:layout_marginStart="@dimen/margin_left_24dp"
+
+                        android:layout_marginTop="145dp"
+                        android:layout_marginEnd="@dimen/margin_right_24dp"
+                        android:background="@drawable/shape_btn_confirm_pressed"
+                        android:text="@string/mine_app_logou_login"
+                        android:textColor="@color/white_full"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </RelativeLayout>
+                <View style="@style/setViewLeft" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

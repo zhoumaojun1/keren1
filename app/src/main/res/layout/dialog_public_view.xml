@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/shape_bg_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:text="@string/mine_card_run_year"
+                android:textColor="@color/color_00000" />
+            <ImageView
+                android:id="@+id/iv_delete_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginEnd="22dp"
+                android:src="@mipmap/device_delete_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_eeeeee" />
+
+        <RelativeLayout
+            android:id="@+id/ll_main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelview1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                />
+
+            <Button
+                android:id="@+id/btn_now_open_ble"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_below="@+id/wheelview1"
+                android:layout_marginStart="@dimen/margin_left_24dp"
+                android:layout_marginEnd="@dimen/margin_right_24dp"
+                android:background="@drawable/shape_btn_confirm_pressed"
+                android:text="@string/mine_card_bind_sure"
+                android:textColor="@color/white_full" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

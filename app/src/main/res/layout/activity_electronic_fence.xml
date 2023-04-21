@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_one_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_24"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:layout_marginLeft="@dimen/margin_right_24dp"
+                    android:textSize="@dimen/size_16sp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_fence_center" />
+
+                <TextView
+                    android:id="@+id/tv_fence_city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_86898"
+                    android:text="天津天津市红桥区"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_fence_city_name_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_fence_city_name"
+                    android:text="沙头街道新洲十一街128号祥祺大厦"
+                    android:layout_marginRight="5dp" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLine" />
+
+            <RelativeLayout
+                android:id="@+id/rlControlCom"
+                style="@style/settings">
+
+
+                <TextView
+
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_fence_radius" />
+
+                <TextView
+                    android:id="@+id/iv_fence_set_radius"
+                    style="@style/itemRightImage"
+                    android:layout_marginRight="5dp"
+                    android:text="设置范围" />
+
+                <ImageView
+                    style="@style/itemRightImage1"
+                    android:src="@mipmap/mine_back_icon" />
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLine" />
+
+            <RelativeLayout
+                android:id="@+id/rlControlS"
+                style="@style/settings">
+
+
+                <TextView
+                    android:id="@+id/tv_exit"
+                    style="@style/setMineItemTitle"
+
+                    android:text="@string/mine_fence_msg_notify" />
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_below="@+id/tv_exit"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp"
+
+                    android:text="@string/mine_fence_msg_notify_point" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/sw_card_msg_notify"
+                    style="@style/itemRightImage"
+                    app:sb_checked="false"
+                    android:layout_marginRight="25dp" />
+
+
+                <ImageView
+                    style="@style/itemRightImage1"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+            <View style="@style/setViewLine" />
+
+            <RelativeLayout
+                android:id="@+id/rlFenceAlarm"
+                style="@style/settings">
+
+                <TextView
+                    android:id="@+id/tv_huatu"
+                    style="@style/setMineItemTitle"
+
+                    android:text="@string/mine_fence_draw_mode" />
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_below="@+id/tv_huatu"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp"
+
+                    android:text="@string/mine_fence_draw_mode_point" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/sw_card_senseless_start"
+                    style="@style/itemRightImage1"
+                    app:sb_checked="false"
+                    android:layout_marginRight="25dp" />
+
+                <ImageView
+                    style="@style/itemRightImage1"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+
+        android:src="@mipmap/card_location_position"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_one_view"
+        />
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_one_view"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/shape_bg_login"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:text="@string/mine_card_run_year"
+                android:textColor="@color/color_00000" />
+            <ImageView
+                android:id="@+id/iv_delete_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginEnd="22dp"
+                android:src="@mipmap/device_delete_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_eeeeee" />
+
+        <RelativeLayout
+            android:id="@+id/ll_main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelview1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/btn_now_open_ble"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_below="@+id/wheelview1"
+                android:layout_marginStart="@dimen/margin_left_24dp"
+                android:layout_marginEnd="@dimen/margin_right_24dp"
+                android:background="@drawable/shape_btn_confirm_pressed"
+                android:text="@string/mine_card_bind_sure"
+                android:textColor="@color/white_full" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

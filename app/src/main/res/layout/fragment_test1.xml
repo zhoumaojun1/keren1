@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_app_language_settings"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/elevationItemTitle1"
+            android:layout_centerVertical="true"
+            android:paddingLeft="25dp"
+            android:text="日期选择" />
+
+        <TextView
+            android:id="@+id/tv_system_sync"
+            style="@style/itemRightImage"
+            android:layout_marginRight="25dp"
+            android:text="选择"
+            android:textColor="@color/color_86898" />
+
+        <ImageView
+
+            style="@style/itemRightImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mine_back_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_run_time"
+        style="@style/itemRightImage"
+        android:layout_marginTop="@dimen/margin_top_21dp"
+        android:layout_marginRight="25dp"
+        android:text="2023-02-25"
+        android:textSize="@dimen/size_14sp"
+        android:textColor="@color/color_86898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_app_language_settings" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_run_record_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_run_time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

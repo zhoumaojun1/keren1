@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_4D4D4D">#4D4D4D</color>
+    <color name="color_C64D4D4D">#C64D4D4D</color>
+    <color name="color_8F8E94">#8F8E94</color>
+    <color name="color_ED001D">#ED001D</color>
+    <color name="color_1F6BC4">#1F6BC4</color>
+    <color name="color_EFEEF1">#EFEEF1</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
+    <color name="color_47C1DF">#47C1DF</color>
+    <color name="color_9B9B9B">#9B9B9B</color>
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_F6F6F6">#F7F7F7</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_1FC88B">#1FC88B</color>
+    <color name="test">#0079FF</color>
+    <color name="blue">#1ca3fc</color>
+    <color name="gray">#FEEE</color>
+    <color name="transparent">#0000</color>
+    <color name="divider">#5aaa</color>
+    <color name="text_gray">#545454</color>
+    <color name="black">#000000</color>
+    <color name="black_80">#80000000</color>
+
+    <color name="white_FFFFFF80">#FFFFFF</color>
+    #
+    <color name="error">#ed7c5c</color>
+    <color name="tab_selected">#1ca3fc</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="btn_active">#00BCC6</color>
+    <color name="color_33cbcc">#33cbcc</color>
+    <color name="plan">#ed7c5c</color>
+    <color name="alarm">#f00</color>
+    <color name="offer">#1ca3fc</color>
+    <color name="text_dark">#444444</color>
+    <color name="color_cyan">#00BCC6</color>
+    <color name="text_light">#dcdcdc</color>
+    <color name="warning">#fc5555</color>
+    <color name="teal_700">#FF018786</color>
+    <!--Activity或者Fragment的默认背景-->
+    <color name="allDefaultColor">#F0F0F0</color>
+    <color name="colorYello">#FF9C00</color>
+    <color name="color_19EEBF">#19EEBF</color>
+    <color name="color_1FC8A9">#7ACC00</color>
+    <color name="color_FCA35C">#FCA35C</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+
+    <color name="color_898989">#898989</color>
+    <color name="del">#fd1800</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_eeeeee">#EEEEEE</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_full">#ffffff</color>
+    <color name="color_86898">#86898E</color>
+
+    <color name="editHintColor">#c6c4c4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray50">#50898989</color>
+    <color name="pet_green">#F5F5F5</color>
+    <color name="pet_green10">#1a2ddfaf</color>
+    <color name="pet_status_bg">#2E2F41</color>
+    <color name="pet_normal">#20222F</color>
+    <color name="pet_toolbar_bg">#2E2F41</color>
+    <color name="pet_gray">#E8E8E8</color>
+    <color name="pet_gray6">#666666</color>
+    <color name="color_f6f6f6">#F6F6F6</color>
+    <color name="color_dddddd">#DDDDDD</color>
+
+    <color name="pet_normal_85">#d9222222</color>
+    <color name="pet_record_cancel_hint">#F8563B</color>
+    <color name="pet_yell_bg1">#0dffffff</color>
+    <color name="pet_yell_bg2">#1affffff</color>
+    <color name="pet_gray9">#999999</color>
+    <color name="pet_list_bg">#F5F5F5</color>
+    <color name="pet_red">#ff0000</color>
+    <color name="color_FAFAFA">#FAFAFA</color>
+
+    <color name="allActivityColor">#EBEBEB</color>
+    <color name="linearLayout">#F2F2F2</color>
+    <color name="color_00000">#000000</color>
+    <color name="color_AAAAAA">#AAAAAA</color>
+    <color name="warningColor">#fd0001</color>
+    <color name="yellowColor">#ffc001</color>
+    <color name="unread_color">#ff0000</color>
+    <color name="color_FF7326">#FF7326</color>
+    <color name="multiple_image_select_primaryDark">#0195FF</color>
+    <color name="colorBg1">#EDF2F7</color>
+    <color name="colorBg1Stroke">#4D7A8FA3</color>
+
+    <!--默认线条颜色-->
+    <color name="default_LineColor">#dddddd</color>
+    <color name="windows_bg">#F6F7F9</color>
+    <color name="color_000000">#00000000</color>
+
+    <color name="bottom_lib_dialog_item_text_color">#3F51B5</color>
+    <color name="bottom_lib_dialog_title_text_color">#303F9F</color>
+    <color name="bottom_lib_dialog_cancel_text_color">#FF4081</color>
+
+</resources>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_login_bg"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <ImageView
+        android:id="@+id/iv_mine_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mine_app_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_user_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:src="@mipmap/mine_right_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wja.keren.user.home.view.AvatarView
+        android:id="@+id/iv_change_user_head"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/mine_user_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mine_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_set">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_set"
+            android:background="@mipmap/mine_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:paddingTop="40dp"
+                android:text="55555"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/size_32sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_user_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="你好,尊敬的车主"
+                    android:textColor="@color/color_AAAAAA"
+                    android:textSize="@dimen/size_14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right_24dp"
+
+                    android:src="@mipmap/mine_small_robot" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_user_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:text="我的车库"
+                android:textColor="@color/color_AAAAAA"
+                android:textSize="@dimen/size_14sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/color_000000"
+                android:fillViewport="true"
+                android:scrollbars="none"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBatteryRemaining_1">
+
+                <LinearLayout
+                    android:id="@+id/ll_add_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/color_000000"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_one_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/gridView_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numColumns="3"
+
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <LinearLayout
+                android:id="@+id/ll_two_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv__mine_card_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_15dp"
+                    android:src="@mipmap/mine_add_small_card" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_right_24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="@dimen/margin_right_24dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv__mine_card_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bounder"
+                    android:src="@mipmap/mine_small_card" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45px"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_msg_notify"
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@mipmap/mine_msg_notify" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+                        android:text="消息通知" />
+
+                    <TextView
+                        style="@style/itemRightImage"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/corner_msg_notify"
+                        android:gravity="center"
+                        android:text="99"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <ImageView
+
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_on_line_request"
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_on_line_keep" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+                        android:text="在线报修" />
+
+                    <TextView
+                        style="@style/itemRightImage"
+                        android:layout_marginRight="35dp"
+                        android:gravity="center"
+                        android:text="报修单进行中"
+                        android:textColor="@color/color_FCA35C"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <ImageView
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/report_theft" />
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        style="@style/elevationItemTitle"
+                        android:layout_marginLeft="62dp"
+                        android:text="失窃上报" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_01"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+
+                        android:text="失窃上报服务仅对车主开放"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <ImageView
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_shop"
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_shop" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+                        android:text="商城" />
+
+                    <ImageView
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_run_report"
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_run_record" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+                        android:text="骑行记录" />
+
+                    <ImageView
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_service_help"
+                    style="@style/settingsUserInfoItem"
+                    android:background="@drawable/mine_tab_shape">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/mine_help_service" />
+
+                    <TextView
+                        style="@style/elevationItemTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="62dp"
+                        android:text="服务与帮助" />
+
+                    <ImageView
+                        style="@style/itemRightImage"
+                        android:src="@mipmap/mine_back_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_service_help1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/margin_top_16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/margin_left_24dp"
+                    android:background="@drawable/mine_tab_shape"
+                    android:visibility="invisible">
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pet_list_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlDeviceDetails"
+                style="@style/settingsUserInfoItem">
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_language_system_sync" />
+
+                <CheckBox
+                    style="@style/itemRightImage"
+                    android:id="@+id/cb_sim_system"
+                    android:focusable="false"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/shape_login_agree_selector"
+                    android:drawablePadding="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+            <View style="@style/setViewLeft" />
+            <RelativeLayout
+                android:id="@+id/rlControlCom"
+                style="@style/settingsUserInfoItem">
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_language_simplified_chinese" />
+
+
+                <CheckBox
+                    style="@style/itemRightImage"
+                    android:id="@+id/cb_sim_en"
+                    android:focusable="false"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/shape_login_agree_selector"
+                    android:drawablePadding="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+            <View style="@style/setViewLeft" />
+            <RelativeLayout
+                android:id="@+id/rlControlS"
+                style="@style/settingsUserInfoItem"
+                >
+
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_language_traditional_chinese" />
+
+                <CheckBox
+                    style="@style/itemRightImage"
+                    android:id="@+id/cb_tra_en"
+                    android:focusable="false"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/shape_login_agree_selector"
+                    android:drawablePadding="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+            <View style="@style/setViewLeft" />
+            <RelativeLayout
+                android:id="@+id/rlFenceAlarm"
+                style="@style/settingsUserInfoItem">
+
+
+
+                <TextView
+                    style="@style/elevationItemTitle1"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="25dp"
+                    android:text="@string/mine_language_english" />
+
+
+                <CheckBox
+                    style="@style/itemRightImage"
+                    android:id="@+id/cb_english"
+                    android:focusable="false"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/shape_login_agree_selector"
+                    android:drawablePadding="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:background="#FFFFFF" />
+
+            </RelativeLayout>
+            <View style="@style/setViewLeft" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

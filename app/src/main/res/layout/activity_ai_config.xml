@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_F5F5F5"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                style="@style/settings"
+                android:background="@color/white">
+
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_low_battery_reminder_settings" />
+
+                <TextView
+                    android:id="@+id/tv_card_low_battery"
+                    style="@style/itemSwitch"
+                    android:text="110" />
+
+                <ImageView
+                    style="@style/itemRightImage2"
+                    android:src="@mipmap/mine_back_icon" />
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLeft" />
+
+            <RelativeLayout
+                android:id="@+id/rlControlCom"
+                android:background="@color/white"
+                style="@style/settings">
+
+
+                <TextView
+
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_fence_settings" />
+
+                <TextView
+                    android:id="@+id/iv_fence_set_scope"
+                    style="@style/itemSwitch"
+                    android:text="设置" />
+
+                <ImageView
+                    style="@style/itemRightImage2"
+                    android:src="@mipmap/mine_back_icon" />
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLeft" />
+
+            <RelativeLayout
+                android:id="@+id/rlControlS"
+
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_exit"
+                    style="@style/setMineItemTitle"
+                    android:text="@string/mine_exit_countdown_off" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_exit"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_right_24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/mine_exit_countdown_off_point"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+                <TextView
+                    android:id="@+id/iv_card_exit_countdown"
+                    style="@style/itemSwitch"
+                    android:layout_marginRight="18dp"
+                    android:text="30秒" />
+
+                <ImageView
+                    style="@style/itemRightImage2"
+                    android:layout_marginRight="24dp"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlFenceAlarm"
+                android:background="@color/white"
+
+                style="@style/settings">
+
+                <TextView
+                    android:id="@+id/tv_open"
+                    style="@style/setMineItemTitle"
+                    android:text="@string/mine_card_senseless_start" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_open"
+                    android:layout_marginLeft="@dimen/margin_right_24dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/mine_card_paired_devices"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/sw_card_senseless_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:sb_checked="false"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                style="@style/settings">
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+
+                    android:text="@string/mine_card_ble" />
+
+                <TextView
+                    android:id="@+id/tv_ble_type"
+                    style="@style/itemSwitch"
+
+                    android:text="远" />
+
+                <ImageView
+                    style="@style/itemRightImage2"
+                    android:src="@mipmap/mine_back_icon" />
+            </RelativeLayout>
+
+
+            <View style="@style/setViewLeft" />
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/settings">
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+
+                    android:text="@string/mine_card_fault_report" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/switch_loop_finger_login"
+                    app:sb_checked="false"
+                    style="@style/itemSwitch1" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLeft" />
+
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/settings">
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+
+                    android:text="@string/mine_card_theft_alarm" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/switch_card_error_shake"
+                    app:sb_checked="false"
+                    style="@style/itemSwitch1" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLeft" />
+
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/settings">
+
+                <TextView
+                    android:id="@+id/tv_fan"
+                    style="@style/setMineItemTitle"
+                    android:text="@string/mine_card_anti_flying_lock" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fan"
+                    android:layout_marginLeft="@dimen/margin_right_24dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/mine_card_paired_devices"
+                    android:textColor="@color/color_86898"
+                    android:textSize="@dimen/size_12sp" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/switch_source_break"
+                    app:sb_checked="false"
+                    style="@style/itemSwitch1" />
+
+
+            </RelativeLayout>
+
+
+            <View style="@style/setViewLeft" />
+            <RelativeLayout
+                android:background="@color/white"
+                style="@style/settings">
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+
+                    android:text="@string/mine_card_uphill_assistance" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/switch_source_break_monitor"
+                    app:sb_checked="false"
+                    style="@style/itemSwitch1" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/setViewLeft" />
+
+            <RelativeLayout
+                style="@style/settings"
+                android:visibility="invisible">
+
+                <TextView
+                    style="@style/setMineItemTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mine_card_lock_out_positioning" />
+
+                <com.wja.keren.user.home.view.SwitchButton
+                    android:id="@+id/switch_source_guard_alarm"
+                    app:sb_checked="false"
+                    style="@style/itemSwitch1" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/shape_bg_login"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:text="@string/mine_card_run_year"
+                android:textColor="@color/color_00000" />
+            <ImageView
+                android:id="@+id/iv_delete_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginEnd="22dp"
+                android:src="@mipmap/device_delete_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_eeeeee" />
+
+        <RelativeLayout
+            android:id="@+id/ll_main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelview1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/btn_now_open_ble"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_below="@+id/wheelview1"
+                android:layout_marginStart="@dimen/margin_left_24dp"
+                android:layout_marginEnd="@dimen/margin_right_24dp"
+                android:background="@drawable/shape_btn_confirm_pressed"
+                android:text="@string/mine_card_bind_sure"
+                android:textColor="@color/white_full" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

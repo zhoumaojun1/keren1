@@ -1,0 +1,409 @@
+<resources>
+    <string name="app_name">keren</string>
+    <!--    登录   -->
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="code">验证码</string>
+    <string name="login">登录</string>
+    <string name="third_login">或者选择其他方式登录</string>
+    <string name="agree">同意</string>
+    <string name="login_account">登录账号</string>
+    <string name="user_protocol_privacy">我已阅读并同意<font color="#7ACC00"><u>《用户协议》、 </u></font><font color="#7ACC00"><u>《隐私政策》，</u></font>\n首次自动注册新账号.</string>
+    <string name="name">名字</string>
+    <string name="account_error">账号类型不对</string>
+    <string name="password_error">账号密码不对</string>
+    <string name="code_error">请输入密码</string>
+    <string name="agree_privacy_policy">请先同意隐私政策</string>
+    <string name="error_account_password">用户名和密码错误</string>
+    <string name="error_account_password_point">密码由8-16位数字、字母或符号组成，至少含有两种字符以上</string>
+
+
+    <string name="card_home">车辆</string>
+    <string name="card_find">发现</string>
+    <string name="card_my">我的</string>
+    <string name="main_select_role">请选择一种身份</string>
+    <!--main页面-->
+    <string name="main_location_title">定位</string>
+    <string name="main_statement_title">报表</string>
+    <string name="main_statement_bar_title">定位</string>
+    <string name="main_control_title">控制</string>
+    <string name="main_control_bar_title">定位</string>
+    <string name="main_my_title">设备管理</string>
+    <string name="main_my_bar_title">定位</string>
+    <string name="main_virtual_experience">虚拟体验</string>
+    <string name="main_user_card">用户用车</string>
+    <string name="main_distributor_card">经销商用车</string>
+    <string name="main_administrators_card">管理员</string>
+    <string name="turn_down_permission_storage">您拒绝了存储空间权限,软件将无法正常使用..</string>
+    <string name="turn_down_permission_call">您拒绝了打电话权限,软件将无法正常使用..</string>
+    <string name="turn_down_permission_camera">您拒绝了相机权限,软件将无法正常使用..</string>
+    <string name="turn_down_permission_location">您拒绝了位置权限,软件将无法正常使用..</string>
+    <string name="card_unbound_card">暂无车辆,请绑定车辆</string>
+    <string name="card_add_new_card">添加新车辆</string>
+    <string name="main_current_weather">当前天气<font color="#FFFFFF"> 大雨</font></string>
+    <string name="main_current_visibility">风速<font color="#FFFFFF"> 南风一级</font></string>
+    <string name="main_current_temperature">气温<font color="#FFFFFF"> 26°C</font></string>
+
+    <string name="main_current_weather_01">当前天气</string>
+    <string name="main_current_visibility_01">风速</string>
+    <string name="main_current_temperature_01">气温</string>
+
+    <string name="main_battery_remaining">100</string>
+    <!--登录 LoginActivity-->
+    <string name="login_input_user_name">输入您的账号</string>
+    <string name="login_input_password">输入您的密码</string>
+    <string name="login_forget_password">忘记密码?</string>
+    <string name="home_login_app">欢迎登录</string>
+    <string name="home_login_app_internet">巴诺物联网</string>
+    <string name="login_title">登录/注册</string>
+    <string name="login_sure_oK">完成并登录</string>
+    <string name="login_sure">确定</string>
+    <string name="bind_phone_code_sure">确认</string>
+    <!--忘记密码 forget_activity-->
+    <string name="forget_pass_title">忘记密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="forget_pass_input_user_name">输入您的账号</string>
+    <string name="forget_pass_input_verification_code">请输入验证码</string>
+    <string name="forget_pass_input_new_password">请输入您的新密码</string>
+    <string name="forget_pass_input_twice_password">请再次确认您的密码</string>
+    <string name="forget_pass_reset_success">修改成功</string>
+    <string name="once_input_pass_inconformity">两次输入的密码不一致</string>
+    <string name="forget_not_match">密码必须为6位及以上的数字+字母组成</string>
+    <string name="subuder_addSub_Acount">账号必须是4位及以上的数字或字母组成</string>
+    <string name="find_password">找回密码</string>
+    <string name="bind_phone_code">请绑定手机号</string>
+    <!--注册 register_activity-->
+    <string name="register_title">注册账号</string>
+    <string name="register_get_verification_code">获取验证码</string>
+    <string name="register_input_user_name">输入您的账号</string>
+    <string name="register_input_verification_code">输入您的验证码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_twice_password">请再次确认您的密码(必填)</string>
+    <string name="register_register">注册</string>
+    <string name="register_haved_user">已有账号,去登陆</string>
+    <string name="register_not_match">密码必须为6位及以上的数字+字母组成</string>
+    <!--验证码登录 code_login_activity-->
+    <string name="verification_code_login">验证码登录</string>
+    <string name="password_code_login">欢迎登录</string>
+
+    <!--修改密码-->
+    <string name="modify_password_input_old_password">请输入原始密码</string>
+    <string name="modify_password_input_new_password">请输入新密码</string>
+    <string name="modify_password_input_once_password">请再次输入新密码</string>
+    <string name="modify_password_next">下一步</string>
+    <string name="country">国家/地区</string>
+    <string name="please_input_phone_or_email">请输入手机号码</string>
+    <string name="please_input_pwd">请输入您的密码(必填)</string>
+    <string name="register">注册</string>
+    <string name="login_register">登录/注册</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="input_phone">输入手机号码</string>
+    <string name="please_input_verify">请输入验证码</string>
+    <string name="get_verify">获取验证码</string>
+    <string name="confirm_pwd">请再次确认你的密码</string>
+    <string name="have_account">已有账号,登录</string>
+    <string name="please_input_old_pwd">请输入您的旧密码</string>
+    <string name="confirm_new_pwd">请再次确认您的新密码</string>
+    <string name="please_input_new_pwd">请输入您的新密码</string>
+    <string name="phone_verification_code">验证码</string>
+    <string name="please_input_verification">请输入6位验证码</string>
+    <string name="login_password">登录密码</string>
+    <string name="please_input_loginpwd">请输入登录密码</string>
+    <string name="new_password">请输入新密码</string>
+    <string name="please_input_regist_password">请输入8-15位字符密码</string>
+    <string name="please_input_again">请再次输入新密码</string>
+    <string name="please_input_number">请输入数字</string>
+    <string name="register_success">注册成功</string>
+    <string name="code_send_fail">验证码发送失败</string>
+    <string name="regist_fail">注册失败</string>
+    <string name="send_verification_code">发送验证码</string>
+    <!--扫码-->
+    <string name="permission_camera">App扫码需要用到拍摄权限</string>
+    <string name="permission_external_storage">App需要用到读写权限</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="qr_code">二维码</string>
+    <string name="bar_code">条形码</string>
+    <string name="find_device_status">发现设备，请保持设备处于蓝牙打开状态</string>
+    <string name="start_scan">开始扫描</string>
+    <string name="scan_code_bind">扫码绑定</string>
+    <string name="open_photo_album">相册导入</string>
+    <string name="ble_device_problem">常见问题</string>
+    <string name="ble_device_list">设备列表</string>
+    <string name="ble_device_now_pair">立即配对</string>
+    <string name="ble_device_again_pair">重新配对</string>
+    <string name="ble_device_pair_fail">配对失败</string>
+    <string name="ble_device_already_bind">已绑定</string>
+    <string name="ble_device_now_bind">立即绑定</string>
+    <string name="ble_device_now_bind_success">绑定成功！</string>
+    <string name="ble_device_back_home"> 返回首页（3S）</string>
+    <string name="bottom_dialog_now_open">立即打开</string>
+    <string name="bottom_dialog_cancel_bind">取消配对</string>
+    <string name="ble_device_list_back"> 返回设备列表</string>
+    <string name="ble_device_again_scan_code">重新扫码</string>
+    <string name="ble_device_remove">移除</string>
+    <string name="ble_device_share_sure">等待确认</string>
+    <string name="hide_bottom_sheet">hide bottom sheet</string>
+    <string name="show_bottom_sheet">show bottom sheet</string>
+    <string name="hide_bottom_sheet_dialog">hide bottom sheet dialog</string>
+    <string name="show_bottom_sheet_dialog">show bottom sheet dialog</string>
+    <string name="bottom_dialog_lib_cancel">取消啊</string>
+    <string name="hello_keren_point_out">你有一条待接收车辆分享的提醒<font color="#FFFFFF"><u>  请查看</u></font></string>
+
+    <!--个人资料-->
+    <string name="mine_user_info_save">保存</string>
+    <string name="mine_set_edit_phone_code">更换手机号</string>
+    <string name="mine_set_login_password">设置登录密码</string>
+    <string name="mine_user_info">用户资料</string>
+    <string name="mine_user_head">头像</string>
+    <string name="mine_user_nick">昵称</string>
+    <string name="mine_user_change_phone">更换手机号</string>
+    <string name="mine_user_change_login_password">修改登录密码</string>
+    <string name="mine_user_face_login">人脸识别登录</string>
+    <string name="mine_user_loop_finger_login">指纹登录</string>
+    <string name="mine_msg_set">消失设置</string>
+    <string name="mine_card_error_shake">异常震动</string>
+    <string name="mine_card_error_shake_down">车子发生异常震动</string>
+    <string name="mine_card_source_break">切断电源</string>
+    <string name="mine_user_error_source_break_be_filled_with">未充满点切断电源</string>
+    <string name="mine_card_source_break_monitor">充电监测</string>
+    <string name="mine_card_source_break_monitor_down">充电进程中电池温度，电压超过阈值</string>
+    <string name="mine_card_source_guard_alarm">防盗报警</string>
+    <string name="mine_card_source_guard_alarm_down">车辆异常移动或设备被破坏</string>
+    <string name="mine_card_source_hitch_alarm">故障消息</string>
+
+
+    <!--帮助服务-->
+    <string name="mine_card_help_service">帮助与服务</string>
+    <string name="mine_card_install">安装</string>
+    <string name="mine_card_down">下载</string>
+    <string name="mine_card_register">注册</string>
+    <string name="mine_card_bind">绑定</string>
+    <string name="mine_card_location">定位</string>
+    <string name="mine_card_device_other">设备管理</string>
+    <string name="mine_card_other">其他</string>
+
+    <!--骑行统计-->
+    <string name="mine_card_run_record">骑行统计</string>
+    <string name="mine_card_run_day">近15天数据</string>
+    <string name="mine_card_run_week">周</string>
+    <string name="mine_card_run_month">月</string>
+    <string name="mine_card_run_year">年</string>
+    <string name="mine_card_run_all_mileage">累计里程</string>
+    <string name="mine_card_run_top_speed">最高时速</string>
+    <string name="mine_card_run_average_speed_per_hour">平均时速</string>
+    <string name="mine_card_run_number">骑行次数</string>
+    <string name="mine_card_run_start_location">起点地址</string>
+    <string name="mine_card_run_end_location">终点地址</string>
+    <string name="mine_card_run_mileage">行驶里程数</string>
+    <string name="mine_card_run_time">花费时长</string>
+    <string name="mine_card_run_speed">平均时速</string>
+
+
+    <!--在线保修-->
+    <string name="mine_card_on_line_guarantee">在线保修</string>
+    <string name="mine_card_select">车辆选择</string>
+    <string name="mine_card_network_name">网点名称</string>
+    <string name="mine_card_keep_time">维修时间</string>
+    <string name="mine_card_problem_from">故障来源</string>
+    <string name="mine_card_problem_type">故障类型</string>
+    <string name="mine_card_msg_point">文字说明</string>
+    <string name="mine_card_recall_repair">撤回修理单</string>
+    <string name="mine_card_msg_point_in">短接空气开关，然后检查并供认全部电池联接线无松动，剥开控制器正负电源线别离剪出一至两根细铜线做打火试验，供电正常时会当即打火熔断。短接电门锁进出线，实际上就是控制器主电源正极与软启动线。</string>
+    <!--车辆设置-->
+    <string name="mine_card_setting">车辆设置</string>
+    <string name="mine_card_setting_custom">自定义车辆图片</string>
+    <string name="mine_card_name_setting">车辆名称设置</string>
+    <string name="mine_card_name_set_no_same">车辆名称设置</string>
+    <string name="mine_card_custom_img">车辆图片</string>
+    <string name="mine_card_name">车辆名称</string>
+    <string name="mine_card_share">用车分享</string>
+    <string name="mine_card_ai_config">智能配置</string>
+    <string name="mine_card_run_info">运行信息</string>
+    <string name="mine_card_info">车辆信息</string>
+    <string name="mine_card_lock">锁定车辆</string>
+    <string name="mine_package_description">4G流量套餐 </string>
+    <string name="mine_package_description_point"> 用于车辆定位及手机应用交互</string>
+    <string name="mine_now_recharge">立即续费</string>
+    <string name="mine_package_term_of_validity">有效期至2023-03-06</string>
+    <string name="mine_package_in_force">生效中</string>
+    <string name="mine_card_set_lock">确定锁定车辆吗？</string>
+    <string name="mine_card_set_lock_point">当车辆还在行驶时（非静止状态）无法锁定车辆？</string>
+
+
+    <!--用车分享-->
+    <string name="mine_user_card_share">用车分享</string>
+    <string name="mine_share_card_ble">蓝牙版</string>
+    <string name="mine_share_card_name">XC3-HiLink</string>
+    <string name="mine_share_card_color">颜色</string>
+    <string name="mine_share_card_sn_code">sn</string>
+    <string name="mine_share_card_frame_no">车架号</string>
+    <string name="mine_share_card_motor_number">电机号</string>
+    <string name="mine_share_card_from_phone_number">搜索手机号进行分享</string>
+    <string name="mine_share_card_from_phone_number_point">通过输入对方的注册账号的手机号进行分享</string>
+    <string name="mine_share_card_from_communication_list">获取手机通讯录进行分享</string>
+    <string name="mine_share_card_from_communication_list_point">通过获取通讯录选择指定通讯录中的人进行分享</string>
+    <string name="mine_share_card_user">分享用户（2）</string>
+    <string name="mine_share_card_user_remove">移除</string>
+    <string name="mine_share_card_user_waiting_sure">等待确认</string>
+
+    <!--添加分享账号-->
+    <string name="mine_add_account_share">添加分享账号</string>
+    <string name="mine_input_account_register">请输入对方用于注册账号的手机号</string>
+    <string name="mine_share_card_register">请输入对方用于注册账号的手机号</string>
+
+    <string name="mine_share_invite_card_name">SRT5-HiLink</string>
+    <string name="mine_location_user">本机用户</string>
+    <string name="mine_share_invite_device_give">将设备分享给</string>
+    <string name="mine_share_invite_device_time_effective_selection">时效选择</string>
+    <string name="mine_share_invite_device_time_place_restrictions_on">限时</string>
+    <string name="mine_share_invite_device_time_place_restrictions_ok">不限时</string>
+    <string name="mine_send_share_invite_device">发起邀请</string>
+    <string name="mine_send_share_invite">分享邀请</string>
+    <!--智能配置-->
+    <string name="mine_ai_config">智能配置</string>
+    <string name="mine_low_battery_reminder_settings">低电量提醒设置</string>
+    <string name="mine_radius_settings">设置半径</string>
+    <string name="mine_fence_settings">电子围栏</string>
+    <string name="mine_exit_countdown_off">离车倒计时关闭</string>
+    <string name="mine_ble_strength">蓝牙强度</string>
+    <string name="mine_exit_countdown_off_point">无轮动无振动情况下，倒计时多少秒自动关闭车辆</string>
+    <string name="mine_card_senseless_start">无感启动</string>
+    <string name="mine_card_paired_devices">配对过的设备，在蓝牙范围内就可以自动启动车辆</string>
+    <string name="mine_card_ble">蓝牙</string>
+    <string name="mine_card_fault_report">故障上报</string>
+    <string name="mine_card_theft_alarm">疑似被盗报警</string>
+    <string name="mine_card_anti_flying_lock">防飞车锁定/坐垫感应</string>
+    <string name="mine_card_anti_flying_lock_point">支持自动感应用户的重量后，才能真正开动车辆</string>
+    <string name="mine_card_uphill_assistance">上坡助力</string>
+    <string name="mine_card_uphill_assistance_point">当坡度到达一定角度时，会自动上坡助力</string>
+    <string name="mine_card_lock_out_positioning">打卡定位</string>
+
+    <!--电子围栏-->
+    <string name="mine_fence_title">电子围栏</string>
+    <string name="mine_fence_center">围栏中心</string>
+    <string name="mine_fence_position">沙头街道新洲十一街128号祥祺大厦</string>
+    <string name="mine_fence_radius">围栏半径（米）</string>
+    <string name="mine_fence_msg_notify">消息通知</string>
+    <string name="mine_fence_msg_notify_point">离开范围内是否需要消息通知</string>
+    <string name="mine_fence_draw_mode">画图模式</string>
+    <string name="mine_fence_draw_mode_point">根据画图比例自动计算出围栏半径</string>
+
+
+    <!--运行信息-->
+    <string name="mine_card_running_info">运行信息</string>
+    <string name="mine_card_power_consumption_today">今日耗电</string>
+    <string name="mine_card_battery_capacity">电池容量</string>
+    <string name="mine_card_estimated_range">续航里程预估</string>
+    <string name="mine_card_battery_level">电池电量</string>
+    <string name="mine_card_battery_health">电池健康度</string>
+    <string name="mine_card_battery_charging_time">充电时间预估</string>
+    <string name="mine_card_battery_normal_tem">温度正常</string>
+    <string name="mine_card_battery_normal_voltage">电压正常</string>
+    <string name="mine_card_battery_charging_and_discharging">充放电次数</string>
+    <string name="mine_card_current_vehicle_condition">当前车况</string>
+    <string name="mine_card_gps">车辆GPS</string>
+    <string name="mine_card_ble_connect">蓝牙连接</string>
+    <string name="mine_card_4g_connect">4G连接</string>
+    <string name="mine_card_number_of_alarms">报警次数</string>
+    <string name="mine_card_number_of_fail">故障次数</string>
+    <string name="mine_card_abnormal_vibrations">异常震动次数</string>
+
+    <!--我的流量卡-->
+    <string name="my_traffic_card_title">我的流量卡</string>
+    <string name="my_traffic_card_select">选择套餐</string>
+    <string name="my_traffic_card_recommend">特惠推荐</string>
+    <string name="my_traffic_card_three_month">三个月</string>
+    <string name="my_traffic_card_infinite_traffic_packet">无限量流量包</string>
+    <string name="my_traffic_card_wechat_payment">微信支付</string>
+    <string name="my_traffic_card_alipay">支付宝</string>
+    <string name="my_traffic_card_altogether">共计</string>
+    <string name="my_traffic_card_now_payment">立即支付</string>
+    <!--车辆信息-->
+    <string name="mine_card_model">车辆型号</string>
+    <string name="mine_card_imei">IMEI</string>
+    <string name="mine_card_sn">SN</string>
+    <string name="mine_card_frame_no">车架号</string>
+    <string name="mine_card_motor_number">电机号</string>
+    <string name="mine_card_central_control_version">中控版本</string>
+    <string name="mine_card_three_guarantees_voucher">三包凭证</string>
+    <string name="mine_card_buy_position">购车网点</string>
+    <string name="mine_card_buy_time">购车时间</string>
+    <string name="mine_card_activation_time">激活时间</string>
+    <string name="mine_card_three_guarantees_time">三包有效期</string>
+    <string name="mine_card_three_guarantees_explain">三包责任说明</string>
+    <string name="mine_card_three_guarantees">为了切实保护消费者的合法权益，明确电动车设备销售者、修理者和生产者的修理、更换、退货（以下称“三包”）责任和义务，国家质检总局、国家工商总局、信息产业部联合发布第四号令，颁布了《电动车设备修理更换退货责任规定》。于2001年11月15日施行的《规定》共31条，消费者应当熟悉以下几点“三包”规定，以便更好的合理维护自身的合法权益。</string>
+    <string name="mine_card_remove_bind_title">解除绑定</string>
+    <string name="mine_app_logou_login">退出登录</string>
+    <string name="mine_card_remove_bind_ok">确定解除绑定吗？</string>
+    <string name="mine_card_info_delete">车辆信息、行程，订单，轨迹，行车记录都信息支持保存一年，过期后数据会自动删除。</string>
+    <string name="mine_card_cancel">取消</string>
+    <string name="mine_card_bind_sure">确认</string>
+    <string name="mine_card_query_detail">查看详情</string>
+    <string name="mine_card_run_enter_the_destination">请输入目的地</string>
+
+    <!--应用信息-->
+    <string name="mine_app_info">应用信息</string>
+    <string name="mine_speech_sounds_service">语音服务</string>
+    <string name="mine_language_settings">语言设置</string>
+    <string name="mine_feed_back">意见反馈</string>
+    <string name="mine_about_my">关于我们</string>
+
+    <!--语音服务-->
+    <string name="mine_app_default_new_version">默认女声新版</string>
+    <string name="mine_app_default_new_version_point">我是可可，很荣幸为你播报</string>
+    <string name="mine_speech_sounds_02">阿瓦隆之王</string>
+    <string name="mine_speech_sounds_02_point">命运之子伊凡尼为你播报</string>
+    <string name="mine_cute_chicken_team">萌鸡小队</string>
+    <string name="mine_cute_chicken_team_point">小鸡鸡来了</string>
+    <string name="mine_voice_use_com">使用中</string>
+    <string name="mine_voice_use">使用</string>
+    <string name="mine_voice_down">下载</string>
+
+    <!--语言设置-->
+    <string name="mine_language_system_sync">跟随系统</string>
+    <string name="mine_language_simplified_chinese">简体中文</string>
+    <string name="mine_language_traditional_chinese">繁体中文</string>
+    <string name="mine_language_english">English</string>
+
+    <!--意见反馈-->
+    <string name="mine_feed_back_problem">请提供问题截图（2/6）</string>
+    <string name="mine_feed_back_and_problem">*问题和意见</string>
+    <string name="mine_feed_back_content">请输入内容</string>
+    <string name="mine_feed_back_contact_way">联系方式</string>
+
+    <!--关于我们-->
+    <string name="mine_about_my_user_register_xie_yi">用户注册协议</string>
+    <string name="mine_about_my_user_privacy_policy">隐私政策</string>
+    <string name="mine_about_my_legal_information">法律信息</string>
+    <string name="mine_about_service_phone">服务电话</string>
+    <string name="mine_about_my_current_version">当前版本</string>
+    <string name="mine_about_app_update">升级</string>
+
+    <!--车库管理-->
+    <string name="card_che_ku_manager">车库管理</string>
+    <string name="card_che_ku_manager_use">使用中</string>
+
+
+    <!--车辆位置-->
+    <string name="card_navigation_location">车辆位置</string>
+    <string name="Select_navigation_software">选择导航软件</string>
+
+      <string name="card_run_navigation_location">骑行导航</string>
+    <string name="Amap">高德地图</string>
+    <string name="Baidu_Map">百度地图</string>
+
+    <string name="permission_location">App定位需要用到权限</string>
+
+    <string name="cancel">取消</string>
+    <string name="submit">确定</string>
+
+
+
+
+
+
+
+
+
+
+</resources>

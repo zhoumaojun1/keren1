@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:background="@drawable/shape_bg_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_card_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:text="@string/mine_share_invite_device_time_effective_selection"
+                android:textColor="@color/color_00000" />
+
+            <ImageView
+                android:id="@+id/iv_delete_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_right_24dp"
+                android:paddingLeft="@dimen/margin_right_24dp"
+                android:paddingTop="@dimen/margin_top_15dp"
+                android:src="@mipmap/device_delete_icon" />
+        </RelativeLayout>
+
+        <View style="@style/setViewLine" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_point"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="26px"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_right_24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <RadioButton
+                    android:id="@+id/rbTimeHib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/shape_login_agree_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/mine_share_invite_device_time_place_restrictions_ok"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rbTimeVibHib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/shape_login_agree_selector"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/mine_share_invite_device_time_place_restrictions_on"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+                <RadioGroup
+                    android:id="@+id/ra_switch_bind_way"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="33dp"
+                    android:background="@drawable/corners_bg_red"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <RadioButton
+                        android:id="@+id/iv_ble_device"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_share_device_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="小时"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:textColor="@drawable/btn_font_selector"
+                        android:textSize="12sp" />
+                    <RadioButton
+                        android:id="@+id/iv_scan_device"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_share_device_selector"
+                        android:text="天"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:checked="true"
+                        android:textColor="@drawable/btn_font_selector"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/margin_left_24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_right_24dp"
+            android:background="@drawable/corners_bg_red"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/TextAppearanceAppCompatSmallError"
+            app:hintTextAppearance="@style/TextAppearanceAppCompatSmallHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eil_account"
+            app:passwordToggleEnabled="false"
+            app:passwordToggleTint="@color/teal_700">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_input_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/please_input_number"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/color_86898"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:textSize="@dimen/size_16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit_share_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginStart="@dimen/margin_left_24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/margin_right_24dp"
+            android:background="@drawable/shape_btn_confirm_pressed"
+            android:text="@string/mine_card_bind_sure"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

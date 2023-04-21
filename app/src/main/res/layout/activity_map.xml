@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mMapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:clickable="true" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_top_tadius_bg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingBottom="@dimen/dimen_30"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_26"
+                android:paddingBottom="@dimen/dimen_10">
+
+                <ImageView
+                    android:id="@+id/carIconIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/card_location_position_icon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/carNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_toRightOf="@+id/carIconIv"
+                    android:text="XC3-HiLink"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/s18"
+                    android:textStyle="bold" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/placeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_18"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_below="@+id/carNameTv"
+                    android:layout_toRightOf="@+id/carIconIv"
+                    android:gravity="center_vertical"
+                    android:text="广东省深圳市南山区飞亚达大厦"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/s12" />
+
+                <ImageView
+                    android:id="@+id/navigationIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/card_run_location" />
+
+            </RelativeLayout>
+
+            <View style="@style/h_line" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingBottom="@dimen/dimen_10"
+            android:visibility="gone"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/Select_navigation_software"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/s16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/navigationCancleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_25_"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:layout_gravity="right"
+                    android:src="@mipmap/device_delete_icon"
+                    />
+
+
+            </RelativeLayout>
+            <View style="@style/h_line" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/gaodeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/Amap"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/s16" />
+
+            <View style="@style/h_line" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/baiduTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/Baidu_Map"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/s16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

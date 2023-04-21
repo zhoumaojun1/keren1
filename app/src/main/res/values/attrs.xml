@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Battery">
+        <attr name="batteryOrientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="batteryColor" format="color"/>
+        <attr name="batteryPower" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="progressWidth1" format="dimension"/>
+        <attr name="progressColor1" format="reference"/>
+        <attr name="backgroundColor1" format="reference"/>
+        <attr name="startAngle1" format="integer"/>
+        <attr name="endAngle1" format="integer"/>
+        <attr name="animation1" format="boolean"/>
+        <attr name="duration1" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="CodeInputView">
+        <!-- 边框宽度 -->
+        <attr name="borderWidth"
+            format="dimension" />
+        <!-- 边框高度 -->
+        <attr name="borderHeight"
+            format="dimension" />
+        <!-- 边框间距 -->
+        <attr name="borderSpacing"
+            format="dimension" />
+        <!-- 边框背景图 -->
+        <attr name="borderImage"
+            format="reference" />
+        <!-- 最大输入长度 -->
+        <attr name="android:maxLength" />
+    </declare-styleable>
+
+</resources>

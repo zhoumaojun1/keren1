@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5"
+    tools:context=".user.home.auth.ForgetPassNextActivity">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+    <RelativeLayout
+        android:id="@+id/rl_sear_phone_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_right_24dp"
+        android:paddingBottom="@dimen/dimen_22"
+        android:paddingTop="@dimen/margin_top_21dp"
+
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/iv_card_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/device_bind_card" />
+
+        <TextView
+            android:id="@+id/tv_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_card_photo"
+            android:text="SAR5-HiLink"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/size_24sp" />
+
+        <TextView
+            android:id="@+id/tv_card_frame_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card_name"
+            android:layout_toRightOf="@+id/iv_card_photo"
+            android:layout_marginLeft="12dp"
+
+            android:text="车架号后四位：8521"
+            android:textColor="@color/color_86898"
+            android:textSize="@dimen/size_12sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_card_now_bind"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="@dimen/margin_right_24dp"
+            android:src="@mipmap/mine_back_icon"
+            android:text="@string/ble_device_now_bind"
+            android:textColor="@color/color_1FC8A9"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/bounder"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
